@@ -25,7 +25,7 @@ fs.readFile(location, {encoding: 'utf-8'}, function (err, data) {
       continue;
     }
     unlinkCommands.push('react-native unlink ' + name);
-    uninstallCommands.push('yarn uninstall ' + name);
+    uninstallCommands.push('yarn remove ' + name);
   }
 
   {
